@@ -1,3 +1,10 @@
+// 🔥 NEW: Registering Mobile Web PWA App Service Worker Handler
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').catch(function(err) { console.log(err); });
+    });
+}
+
 // Selecting Document DOM Node Elements
 const cells = document.querySelectorAll('.cell');
 const statusText = document.getElementById('statusText');
