@@ -1,0 +1,200 @@
+/* 🔥 FIXED: Optimized High-Speed Ambient Theme Layout (No Loading Lag) */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    /* Static premium deep-space navy gradient for instant loading */
+    background: radial-gradient(circle at center, #0d0e15 0%, #06070a 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Stable Neon Hot Pink Ambient Glow (Top Left) */
+body::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255, 0, 127, 0.15) 0%, transparent 70%);
+    top: 5%;
+    left: 10%;
+    z-index: 1;
+}
+
+/* Stable Neon Electric Blue Ambient Glow (Bottom Right) */
+body::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(0, 210, 255, 0.12) 0%, transparent 70%);
+    bottom: 5%;
+    right: 10%;
+    z-index: 1;
+}
+
+/* Premium Transparent Crystal Cyber Glass Container Box */
+.game-wrapper {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 30px 25px;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 
+                0 0 40px rgba(0, 210, 255, 0.05),
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    width: 360px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+/* FIXED: Heading ek hi straight line mein fit aur clean */
+h1 {
+    margin-top: 0;
+    font-size: 1.45rem;             
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;            
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
+    margin-bottom: 20px;
+}
+
+/* High-Tech Glossy Black Scoreboard Panel Banner */
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.score-box {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 10px 5px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.score-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+/* Translucent Current Turn Banner */
+.status-panel {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Vibrant Laser Signatures Colors Glows */
+.x-color {
+    color: #ff9f43;
+    text-shadow: 0 0 15px rgba(255, 159, 67, 0.8);
+}
+
+.o-color {
+    color: #00d2ff;
+    text-shadow: 0 0 15px rgba(0, 210, 255, 0.8);
+}
+
+/* Grid Matrix Layout Architecture */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+/* High-Gloss Translucent Gaming Grid Blocks buttons */
+.cell {
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+}
+
+.cell:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* WINNING STRIKE GLOW */
+.cell.winning-strike {
+    background: rgba(46, 160, 67, 0.2) !important; 
+    border: 2px solid #2ea043 !important;           
+    transform: scale(1.05);                          
+    box-shadow: 0 0 35px rgba(46, 160, 67, 0.7);    
+}
+
+/* Cyber Metallic Gradient Action Restart Button Layout */
+.reset-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1f1c2c, #3a6b82);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Confetti Falling Drops Layer settings */
+.confetti-particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    animation: fallAnimation 2s linear forwards;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+@keyframes fallAnimation {
+    0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(105vh) rotate(540deg); opacity: 0; }
+}
