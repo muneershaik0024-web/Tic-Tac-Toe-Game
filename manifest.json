@@ -1,17 +1,17 @@
 {
-  "name": "Premium Cyber Tic-Tac-Toe",
-  "short_name": "Tic-Tac-Toe",
+  "name": "Premium Cyber Tic-Tac-Toe Game",
+  "short_name": "TicTacToe",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#06070a",
+  "background_color": "#0d0e15",
   "theme_color": "#ff007f",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://flaticon.com",
+      "src": "https://unsplash.com",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }
